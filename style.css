@@ -336,3 +336,123 @@ body {
 .btn-repo:hover {
     text-decoration: underline;
 }
+/* =========================================
+   6. SECCIÓN CONTACTO (Commit 5)
+   ========================================= */
+.seccion-contacto {
+    padding: 80px 10%;
+    background-color: #ffffff; /* Fondo blanco para contrastar con el gris de proyectos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05); /* Sombra suave 'elegante' */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    color: #2b3a55;
+    font-size: 0.9rem;
+}
+
+.formulario-contacto input, 
+.formulario-contacto select, 
+.formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Interactividad solicitada en pauta */
+.formulario-contacto input:focus, 
+.formulario-contacto textarea:focus {
+    border-color: #2b53a3;
+    background-color: #fff;
+}
+
+.btn-enviar {
+    background-color: #2b53a3;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #f7a600; /* Naranja de acento */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(247, 166, 0, 0.3);
+}
+
+/* =========================================
+   7. FOOTER PROFESIONAL (Commit 5)
+   ========================================= */
+.footer-profesional {
+    background-color: #1a1c20; /* Gris casi negro muy pro */
+    color: #ffffff;
+    padding: 50px 10% 20px 10%;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 25px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.redes-sociales a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.redes-sociales a i {
+    font-size: 1.4rem;
+}
+
+.redes-sociales a:hover {
+    color: #f7a600;
+    transform: scale(1.1);
+}
+
+.ubicacion {
+    font-style: italic;
+    font-size: 0.8rem !important;
+    opacity: 0.5;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+/* REQUISITO: Smooth Scroll para que la página baje suave */
+html {
+    scroll-behavior: smooth;
+}
