@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -54,6 +55,135 @@
                 </aside>
             </div>
         </section>
+
+        <section id="habilidades" class="seccion-habilidades">
+            <div class="habilidades-header">
+                <h2>Habilidades</h2>
+                <div class="linea-naranja"></div>
+                <p class="subtitulo-habilidades">Tecnologías y competencias</p>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table class="tabla-dominio">
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Nivel</th>
+                            <th>Dominio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Avanzado</td>
+                            <td><div class="barra-fondo"><div class="barra-progreso azul" style="width: 90%;"></div></div></td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Intermedio-Alto</td>
+                            <td><div class="barra-fondo"><div class="barra-progreso verde" style="width: 85%;"></div></div></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Intermedio</td>
+                            <td><div class="barra-fondo"><div class="barra-progreso naranja" style="width: 60%;"></div></div></td>
+                        </tr>
+                        <tr>
+                            <td>Ciberseguridad</td>
+                            <td>Intermedio</td>
+                            <td><div class="barra-fondo"><div class="barra-progreso purpura" style="width: 75%;"></div></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contenedor-listas">
+                <article class="tarjeta-lista">
+                    <h3>Competencias Técnicas <span class="badge">ul</span></h3>
+                    <ul>
+                        <li>Maquetación responsiva [cite: 119]</li>
+                        <li>Control de versiones con Git [cite: 121]</li>
+                        <li>Diseño con Flexbox y Grid [cite: 122]</li>
+                        <li>Accesibilidad web (WCAG) [cite: 123]</li>
+                    </ul>
+                </article>
+                <aside class="tarjeta-lista">
+                    <h3>Ruta de Aprendizaje <span class="badge">ol</span></h3>
+                    <ol>
+                        <li>HTML5 y CSS3 (actual)</li>
+                        <li>JavaScript ES6</li>
+                        <li>React.js</li>
+                        <li>Node.js y Express</li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion-proyectos">
+            <div class="habilidades-header">
+                <h2>Proyectos</h2>
+                <div class="linea-naranja"></div>
+            </div>
+
+            <div class="grid-proyectos">
+                <figure class="card-proyecto">
+                    <img src="img/proyecto1.jpg" alt="Proyecto Ciberseguridad" width="300" height="180">
+                    <figcaption>
+                        <h4>Scanner de Vulnerabilidades</h4>
+                        <p>Herramienta automatizada desarrollada en Python.</p>
+                        <a href="#">Ver repositorio →</a>
+                    </figcaption>
+                </figure>
+                <figure class="card-proyecto">
+                    <img src="img/proyecto2.jpg" alt="Proyecto Web" width="300" height="180">
+                    <figcaption>
+                        <h4>Landing Page Responsiva</h4>
+                        <p>Sitio web optimizado con Flexbox y Grid.</p>
+                        <a href="#">Ver repositorio →</a>
+                    </figcaption>
+                </figure>
+                <figure class="card-proyecto">
+                    <img src="img/proyecto3.jpg" alt="Proyecto Gym" width="300" height="180">
+                    <figcaption>
+                        <h4>Gym Tracker App</h4>
+                        <p>Gestión de cargas máximas para entrenamiento.</p>
+                        <a href="#">Ver repositorio →</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+            <form action="#" class="formulario-contacto">
+                <label for="nombre">Nombre completo [cite: 164]</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico [cite: 165]</label>
+                <input type="email" id="email" placeholder="tu@email.com" required>
+
+                <label for="asunto">Asunto [cite: 167]</label>
+                <select id="asunto">
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="consulta">Consulta Técnica</option>
+                </select>
+
+                <label for="mensaje">Mensaje [cite: 169]</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar mensaje [cite: 173]</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Diego Cruz. Todos los derechos reservados. [cite: 177]</p>
+            <div class="redes-sociales">
+                <span>GitHub</span> | <span>LinkedIn</span> | <span>Instagram</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

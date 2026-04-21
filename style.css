@@ -1,3 +1,6 @@
+/* =========================================
+   1. ESTILOS GLOBALES
+   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +9,14 @@
 }
 
 body {
-    background-color: #e8e8e8;
+    background-color: #e8e8e8; /* Fondo gris claro de la guía */
     color: #333;
     line-height: 1.6;
 }
 
+/* =========================================
+   2. NAVEGACIÓN (FLEXBOX)
+   ========================================= */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -41,6 +47,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -48,17 +55,25 @@ body {
     color: #f7a600;
 }
 
+/* =========================================
+   3. HERO / PRESENTACIÓN
+   ========================================= */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 10%;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.hero-content {
+    flex: 1;
 }
 
 .hero-content h1 {
     font-size: 3rem;
+    margin-bottom: 5px;
     color: #2b53a3;
 }
 
@@ -66,6 +81,19 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     color: #f7a600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 0 0 auto;
+    margin-left: 50px;
 }
 
 .hero-image img {
@@ -73,6 +101,10 @@ body {
     border: 8px solid #f4f4f4;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
+/* =========================================
+   4. SOBRE MÍ (CUADRO BLANCO RESALTADO)
+   ========================================= */
 .seccion-sobre-mi {
     padding: 60px 10%;
 }
@@ -83,12 +115,32 @@ body {
     align-items: flex-start;
 }
 
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h2 {
+    font-size: 2rem;
+    color: #2b3a55;
+    margin-bottom: 20px;
+}
+
+.cita {
+    border-left: 5px solid #f7a600;
+    padding: 15px 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    font-style: italic;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Tarjeta de Datos Personales (Efecto Guía) */
 .tarjeta-datos {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 15px;
     min-width: 320px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Sombra preciosa */
 }
 
 .tarjeta-datos h3 {
@@ -104,12 +156,107 @@ body {
 
 .tarjeta-datos ul li {
     margin-bottom: 15px;
+    font-size: 0.95rem;
 }
 
-.cita {
-    border-left: 5px solid #f7a600;
-    padding: 15px 20px;
-    margin-top: 30px;
-    font-style: italic;
-    color: #666;
+/* =========================================
+   5. HABILIDADES (TABLA Y BARRITAS)
+   ========================================= */
+.seccion-habilidades {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.habilidades-header {
+    margin-bottom: 40px;
+}
+
+.etiqueta-commit {
+    border: 1px dashed #e74c3c;
+    color: #e74c3c;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.linea-naranja {
+    width: 60px;
+    height: 4px;
+    background-color: #f7a600;
+    margin: 15px auto;
+}
+
+/* Estilo de la Tabla "Preciosa" */
+.tabla-contenedor {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+}
+
+.tabla-dominio {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-dominio thead th {
+    background-color: #2b3a55;
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+.tabla-dominio thead th:first-child { border-radius: 10px 0 0 10px; }
+.tabla-dominio thead th:last-child { border-radius: 0 10px 10px 0; }
+
+.tabla-dominio td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+/* Barras de Progreso Dinámicas */
+.barra-fondo {
+    background-color: #edf2f7;
+    height: 10px;
+    border-radius: 10px;
+    width: 150px; /* Ancho de la celda de dominio */
+    overflow: hidden;
+}
+
+.barra-progreso {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.azul { background: linear-gradient(to right, #2b53a3, #5c7fcc); }
+.verde { background: linear-gradient(to right, #27ae60, #2ecc71); }
+.naranja { background: linear-gradient(to right, #d35400, #f7a600); }
+.purpura { background: linear-gradient(to right, #8e44ad, #9b59b6); }
+
+/* Listas de Competencias */
+.contenedor-listas {
+    display: flex;
+    gap: 30px;
+}
+
+.tarjeta-lista {
+    background: white;
+    flex: 1;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.badge {
+    background: #e74c3c;
+    color: white;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    vertical-align: middle;
 }
