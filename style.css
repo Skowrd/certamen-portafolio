@@ -456,3 +456,30 @@ body {
 html {
     scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mejora adicional: un pequeño efecto al pasar el mouse por los enlaces del menú */
+.navbar ul li a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #f7a600; /* El naranja que estamos usando */
+    transition: width .3s ease;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #f7a600;
+}
